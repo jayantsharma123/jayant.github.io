@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+.full-page{
+    width: 100%;
+    height: 100vh;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.full-page .container{
+    width: 100%;
+    margin-top: 15rem;
+    max-width: 60rem;
+    height: 30rem;
+    background-color: white;
+    border-radius: 5rem;
+}
+
+.full-page .container h2{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.full-page .container .input-container{
+    display: flex;
+    justify-content: space-between;
+    /* flex: 1; */
+    margin: 4rem 5rem;
+}
+
+.input-container input{
+    padding: 1.8rem;
+    flex: 1;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: rgb(237,238,240);
+    border-radius: 5rem 1rem 1rem 5rem;
+}
+
+.input-container button{
+    right: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem 5rem 5rem 1rem;
+    font-size: 1.6rem;
+    padding: 1rem 3.5rem;
+    background-color: rgb(255,89,69);
+    color: white;
+    cursor: pointer;
+}
+
+
+.full-page .store-item{
+    max-width: 80rem;
+    width: 100%;
+    padding: 2rem;
+    height: fit-content;
+    border-radius: 2rem;
+    background-color: rgb(240, 57, 37);
+    margin-top: 3rem;
+}
+
+ul li{
+    font-size: 2rem;
+    list-style: none;
+    background-color: rgb(237,238,240);
+    margin: 1rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 20rem;
+    position: relative;
+    padding-left: 4rem;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: '';
+    width: 2.5rem;
+    position: absolute;
+    height: 2.5rem;
+    left: 1rem;
+    border-radius: 50%;
+    background: url(OIP.jpg);
+    background-color: transparent;
+    top: 7px;
+    background-size: cover;
+    background-position: center;
+}
+
+ul li.chaked{
+    text-decoration: line-through;
+}
+
+ul li.chaked::before{
+    background: url(pngtree-right-symbol-png-image_8741184.png);
+    background-size: cover;
+    background-position: center;
+}
+
+ul li span{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 2.5rem;
+    padding: 0.5rem 1rem;
+    top: 0.6rem;
+}
+
+ul li span:hover{
+    background-color: rgb(220, 225, 236);
+    border-radius: 2rem;
+}
